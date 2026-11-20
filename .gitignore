@@ -1,0 +1,22 @@
+# Dependencias
+/vendor/
+/composer.lock
+
+# Configuración privada
+/.env
+/.env.*
+!/.env.example
+
+# IDE
+/nbproject/
+
+# Documentación generada
+/docs/api/
+/.phpdoc/
+/phpdoc.xml
+
+# Herramientas de calidad
+/.php-cs-fixer.cache
+
+# Local test results
+/var/

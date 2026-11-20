@@ -1,0 +1,33 @@
+# Normalización de archivos
+* text=auto
+*.php text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+*.pdf binary
+
+# Herramientas de desarrollo
+/tests/ export-ignore
+/.github/ export-ignore
+/phpstan.neon export-ignore
+/.php-cs-fixer.dist.php export-ignore
+/phpdoc.dist.xml export-ignore
+
+# Configuración Git y Composer
+/.gitignore export-ignore
+/.gitattributes export-ignore
+/composer.lock export-ignore
+
+# Archivos locales y privados
+/.env export-ignore
+/vendor/ export-ignore
+/nbproject/ export-ignore
+/.php-cs-fixer.cache export-ignore
+
+# Documentación generada
+/docs/api/ export-ignore
+/.phpdoc/ export-ignore
+/phpdoc.xml export-ignore
+
+# Local test helpers and generated results
+/scripts/ export-ignore
+/var/ export-ignore
