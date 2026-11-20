@@ -58,9 +58,6 @@ jobs:
             echo "OK: consumer autoload and Spanish tax ID validation", PHP_EOL;
           '
 
-      - name: Audit dependencies
-        run: composer audit --no-dev
-
       - name: Full release quality audit (Composer, static analysis, consumer)
         shell: bash
         run: bash scripts/audit-release-version.sh "$(command -v php)" "${{ matrix.php }}"
